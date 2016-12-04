@@ -1,0 +1,3 @@
+[submodule "bucket-prototype"]
+	path = bucket-prototype
+	url = https://github.com/lastone9182/bucket-prototype
