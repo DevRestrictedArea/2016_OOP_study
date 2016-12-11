@@ -4,6 +4,9 @@
 
 import java.util.HashMap;
 
+/**
+ * The type Order.
+ */
 public class Order {
 
     private String basketID;
@@ -11,6 +14,13 @@ public class Order {
     private Coupon[] basketCoupon;
     private Product[] products;
 
+    /**
+     * Instantiates a new Order.
+     *
+     * @param orderString the order string
+     * @param productList the product list
+     * @param couponList  the coupon list
+     */
     public Order (String orderString, HashMap<String , Product> productList, HashMap<String , Coupon> couponList) {
         String[] orderInfo = orderString.split(",");
 
@@ -42,6 +52,9 @@ public class Order {
         }
     }
 
+    /**
+     * Print basket.
+     */
     public void printBasket(){
         int thisPrice=0, salePrice=0, totalPrice=0, saleTotalPrice=0;
         String usedCoupon;
@@ -68,11 +81,6 @@ public class Order {
         System.out.println("");
         System.out.println("total price "+totalPrice+" WON / total discount price "+saleTotalPrice+" WON\n");
         // System.out.println("WARNING");
-        // System.out.println("========== TEST data area ==========");
-        // System.out.println(totalPrice);
-        // System.out.println(thisPrice);
-        // System.out.println(salePrice);
-        // System.out.println("========== TEST data area ==========");
         
     }
 }

@@ -2,19 +2,15 @@
  * Doing
  */
 
- /*
-    [Coupon Condition Code]
-    ONLYONE : Do not use any other coupon.
-    TARGET-[Product.code] : Only use for target product.
-    AMOUNT-[Number] : adapted product amount.
-    OVERCHARGE-[Number] : coupon can use when price is over than Number.
-    USERLIMIT-[Number] : limit use amount.
- */
-
 import java.util.HashMap;
 
 public class Doing {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // before test setting value
@@ -37,7 +33,9 @@ public class Doing {
         couponList.put("C3", new Coupon("BASKET", "C3", "first come sale coupon", "20%", conditions4, 10));
 
 
-        // test for Product.java
+        /**
+         * Test for Product.java
+         */
         System.out.println("====== test for Product.java ======");
         productList.get("H").printValue();
         productList.get("M").printValue();
@@ -45,7 +43,9 @@ public class Doing {
 
         System.out.println("\n");
 
-        // test for Coupon.java
+        /**
+         * test for Coupon.java
+         */
         System.out.println("====== test for Coupon.java ======");
         couponList.get("C1").printValue();
         couponList.get("C1-1").printValue();
@@ -54,7 +54,9 @@ public class Doing {
 
         System.out.println("\n");
 
-        // test for Order.java
+        /**
+         * test for Order.java
+         */
         System.out.println("====== test for Order.java ======");
         String orderString = "123456,tmon,C3,H|1|C2";
         orderList.put(orderString.split(",")[0], new Order(orderString, productList, couponList) );
