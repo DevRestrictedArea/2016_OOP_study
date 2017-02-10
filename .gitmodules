@@ -1,6 +1,0 @@
-[submodule "Jongwon/python-bucket"]
-	path = Jongwon/python-bucket
-	url = https://github.com/lastone9182/python-bucket.git
-[submodule "Jongwon/Java-bucket"]
-	path = Jongwon/Java-bucket
-	url = https://github.com/lastone9182/Java-bucket.git
